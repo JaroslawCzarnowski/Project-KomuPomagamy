@@ -1,0 +1,27 @@
+@import './colors';
+
+.three_columns_container{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: $color_three; 
+
+}
+.three_columns_number {
+    font-size: 2em;
+    margin-top: 10px;
+    margin-bottom: 10Px;
+    font-weight: 100;
+}
+.three_columns_heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 10;
+}
+.three_columns_text {
+    margin-top: 30px;
+    font-weight: 100;
+}

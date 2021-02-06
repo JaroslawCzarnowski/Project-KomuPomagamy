@@ -1,0 +1,19 @@
+@import '../scss/setings/colors';
+@import '../scss/setings/fonts';
+@import '../scss/reset.scss';
+
+
+.body {
+    font-family:$font-base;
+    text-decoration: none;
+}
+
+@import '../scss/setings/HomeHeader';
+@import '../scss/setings/ThreeColumns.scss';
+@import '../scss/setings/SimpleSteps.scss';
+@import '../scss/setings/About.scss';
+@import '../scss/setings/WhoWeHelp.scss';
+@import '../scss/setings/Contacts.scss';
+
+
+@import './setings/buttons.scss';

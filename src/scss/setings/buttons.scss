@@ -1,0 +1,73 @@
+@import '../setings/colors';
+//base for all buttons
+.btn {
+    background-color: $color_one;
+    &:hover {
+        cursor: pointer;
+    }
+}
+//home header buttons
+.btn_menu_top {
+    padding: 10px;
+    margin: 1px;
+    color: $color_four;
+    font-size: 1em;
+    text-decoration: none;
+    &:hover {
+        border: 1px solid $color_three;    
+        }
+    };
+
+.btn_menu-bottom {
+        padding: 10px 20px;     
+        margin: 1px; 
+        // border: 1px solid $color_one;
+        text-decoration: none;
+        color: $color_four;   
+        font-size: 1.1em;   
+        height: 52px;  
+        &:hover {
+         text-decoration:underline;
+         color: $color_black;    
+        } 
+    }
+.btn_menu_bottom__bottom {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: $color_four;
+    border: 1px solid $color_black;
+    font-size: 1.4em;
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+
+.btn-simple-steps_button {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: $color_four;
+    border: 1px solid $color_black;
+    font-size: 1.4em;
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+
+
+.btn_who-we-help-button {   
+    padding: 15px;
+    background-color: $color_one;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.form-submit-button {
+    padding: 10px 20px;     
+    margin: 1px; 
+    border: 1px solid $color_black;   
+    font-size: 0.8em;  
+    background-color: $color_one;  
+}
