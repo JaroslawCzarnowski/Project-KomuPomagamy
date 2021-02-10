@@ -100,7 +100,7 @@ const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {
                  <div className="login-menu__top">
                  <div className="header_menu_top">
                     <Link2 className="btn_menu_top" to ='/login'>Zaloguj</Link2>
-                    <Link2 className="btn_menu_top" to ='/login'>Załóż konto</Link2>
+                    <Link2 className="btn_menu_top" to ='/signUp'>Załóż konto</Link2>
                 </div>
                 <div className="header_menu_top_bottom">
                     <Link2 className='btn_menu-bottom' to =''> Start</Link2>

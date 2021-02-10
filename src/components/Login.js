@@ -107,7 +107,8 @@ import HomeHeaderButton from './HomeHeaderButton';
                         <Link to="/signUp">
                              <button className="btn form-submit-button">Załóż konto</button>
                         </Link>   
-                       <Link to="/login"> <button className="btn form-submit-button" type="submit">Zaloguj się</button>
+                       <Link to="/login">
+                            <button className="btn form-submit-button" type="submit">Zaloguj się</button>
                        </Link>
                     </div>                               
             </form>
