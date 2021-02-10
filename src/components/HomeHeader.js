@@ -25,7 +25,7 @@ const HomeHeader = () => {
             <div className='header_menu_bottom'>
                 <div className='header_menu_bottom_text'>
                     <h1>Zacznij pomagać! <br/>Oddaj niechciane rzeczy w zaufane ręce</h1>
-                    <img scr={Decoration} alt='decor' className='header_bottom_decoration'/>
+                    <img src={Decoration} alt='deco' className='header_bottom_decoration'/>
                 </div>
                 <div className='header_menu_bottom_btn'>
                     <Link className='btn_menu_bottom__bottom' to="/login">Oddaj rzeczy</Link>

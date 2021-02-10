@@ -147,7 +147,9 @@ const validColor = validColor2;
                         </label>
                     </div>
                     <div className="login-form-buttons-container" >    
-                        <button className="btn form-submit-button">Załóż konto</button>                    
+                        <Link to="/singUp">
+                            <button className="btn form-submit-button">Załóż konto</button>
+                        </Link>                  
                         <Link to="/login">
                             <button className="btn form-submit-button">Zaloguj się</button>
                         </Link>                          
