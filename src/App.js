@@ -1,7 +1,8 @@
 import React from 'react';
 import Home from './components/Home';
 import Login from './components/Login';
-import LoginOut from './components/LogOut';
+import LogOut from './components/LogOut';
+import SignUp from './components/SignUp';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App () {
@@ -11,8 +12,9 @@ function App () {
         <Switch>
           <Route path='/home' component={Home} />
           <Route path='/login' component={Login} />
-          <Route path='/' component={Home} />  
-          <Route path='/logOut'component={LoginOut} />
+          <Route path='/SignUp' component={SignUp} />
+          <Route path='/logOut'component={LogOut} />
+          <Route path='/' component={Home} /> 
         </Switch>         
       </Router>
       </>

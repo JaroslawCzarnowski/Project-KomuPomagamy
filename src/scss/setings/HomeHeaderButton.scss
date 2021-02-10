@@ -1,0 +1,26 @@
+.login-menu-container {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.login-menu__welcome {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 10px;
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.login-menu__top {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.login-menu__bottom {
+    width: 683px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}

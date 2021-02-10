@@ -6,9 +6,9 @@ import HomeHeaderButton from './HomeHeaderButton';
 
 
 const HomeHeader = () => {
-    let loggedIn = localStorage.getItem("loggedIn");    
-    let isLoggedIn = false;
-    if (loggedIn === "true") {
+    let isLoggedIn = localStorage.getItem("loggedIn");    
+    console.log(isLoggedIn, "logged w homeHeader")
+    if (isLoggedIn === "true") {
         isLoggedIn = true;
     }
     else {
@@ -19,25 +19,17 @@ const HomeHeader = () => {
             <img src={header} className = "header_image" alt="header_image_img"/>
             <div className="header_menu">
             <div className= "header_menu_right">
-                <div className="header_menu_top">
-                    <Link className="btn_menu_top" to ='Login'>Zaloguj</Link>
-                    <Link className="btn_menu_top" to ='Login'>Załóż konto</Link>
-                </div>
-                <div className="header_menu_top_bottom">
-                    <Link className='btn_menu-bottom' to =''> Start</Link>
-                    <Link className='btn_menu-bottom' to ='SipleSteps'> O co chodzi?</Link>
-                    <Link className='btn_menu-bottom' to ='About'> O nas</Link>
-                    <Link className='btn_menu-bottom' to = 'WhoWeHelp'>Fundacja i organizacje</Link>
-                    <Link className='btn_menu-bottom' to ='Contaccts'>Kontakt</Link>
-                </div>
+            <div className= "login-menu-container">
+            <HomeHeaderButton homeOrLogin={"home"} loggedIn={isLoggedIn}/>
+            </div>
             <div className='header_menu_bottom'>
                 <div className='header_menu_bottom_text'>
-                    <h1>Zacznij pomagać<br/>Odaj niechciane rzeczy w zaufane ręce</h1>
-                    <img scr={Decoration} className='header_bottom_decoration' alt='Decoration'/>
+                    <h1>Zacznij pomagać! <br/>Oddaj niechciane rzeczy w zaufane ręce</h1>
+                    <img scr={Decoration} alt='decor' className='header_bottom_decoration'/>
                 </div>
                 <div className='header_menu_bottom_btn'>
-                    <Link className='btn_menu_bottom__bottom' to="">Oddaj rzeczy</Link>
-                    <Link className='btn_menu_bottom__bottom' to="">Zorganizuj zbiókę</Link>
+                    <Link className='btn_menu_bottom__bottom' to="/login">Oddaj rzeczy</Link>
+                    <Link className='btn_menu_bottom__bottom' to="/login">Zorganizuj zbiókę</Link>
                 </div>
                 </div>
             </div>

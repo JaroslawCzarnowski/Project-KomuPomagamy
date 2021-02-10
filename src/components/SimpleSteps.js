@@ -18,16 +18,16 @@ const SimpleSteps = () => {
                     <img src={icon1} alt="ic1" className="simple_steps_middle_decoration" />
                     <p className="simple_steps_middle_underlined">Wybierz rzeczy</p>
                     <div className="simple_steps_middle_underlined-underline"></div>
-                    <p className="simple_steps_middle_bottom_text">ubrania, zabawki, sprzęt i inne</p>
+                    <p className="simple_steps_middle_bottom-text">ubrania, zabawki, sprzęt i inne</p>
                 </div>
                 <div className="simple_steps_middle_align">
                     <img src={icon2} alt="ic2" className="simple_steps_middle_decoration" />
                     <p className="simple_steps_middle_underlined">Spakuj je</p>
                     <div className="simple_steps_middle_underlined-underline"></div>
-                    <p className="simple_steps_middle_bottom_text">skorzystaj z worków na śmieci</p>
+                    <p className="simple_steps_middle_bottom-text">skorzystaj z worków na śmieci</p>
                 </div>
                 <div className="simple_steps_middle_align">
-                    <img src={icon3} alt="ic3" className="simple-steps_middle_decoration" />
+                    <img src={icon3} alt="ic3" className="simple_steps_middle_decoration" />
                     <p className="simple_steps_middle_underlined">Zdecyduj komu chcesz pomóc</p>
                     <div className="simple_steps_middle_underlined-underline"></div>
                     <p className="simple_steps_middle_bottom-text">wybierz zaufane miejsce</p>
@@ -40,7 +40,7 @@ const SimpleSteps = () => {
                 </div>
             </div>
             <div className="simple-steps-bottom">
-                <Link to="/logi" className="btn-simple-steps_button" >oddaj rzeczy</Link>
+                <Link to="/login" className="btn-simple-steps_button" >oddaj rzeczy</Link>
             </div>
         </div>
     )

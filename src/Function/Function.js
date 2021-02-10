@@ -33,8 +33,9 @@ export const compareTwoStrings = (string1, string2) => {
     }
 }
 
-export const loginCheckForMenuView = (localStorageitem) => {         
-    if (localStorage.getItem(localStorageitem) === "true") {
+export const loginCheckForMenuView = (localStorageitem) => {  
+    let value = localStorage.getItem(localStorageitem)       
+    if (value === "true" || value === true ) {
         return true;
     }
     else {
@@ -45,4 +46,8 @@ export const loginCheckForMenuView = (localStorageitem) => {
 export const nextStep = (nextStepNumber) => {
     localStorage.setItem("step", nextStepNumber);
     window.location.reload();
+}
+export const logOut = (logged, locStorKey) => {
+    logged = false;
+    localStorage.setItem(locStorKey, false);      
 }

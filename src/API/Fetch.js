@@ -1,8 +1,9 @@
-import {API} from '../API/Varibers';
+// import {API} from '../API/Varibers';
 import {Messages_API} from '../API/Varibers';
+const API = "http://localhost:3000";
 
-export const getFundation = (successCallback) => {
-    fetch(`${API}/fundations`)
+export const getOrgs = (itemsToGet, successCallback) => {
+    fetch(`${API}/${itemsToGet}`)
         .then(response => response.json())
         .then(data => {
             successCallback(data);
@@ -11,43 +12,59 @@ export const getFundation = (successCallback) => {
             }
         })
         .catch(error => {
-            console.log(error);
-           
-        });
-}
-export const getOrganization = (successCallback) => {
-    fetch(`${API}/organizations`)
-        .then(response => response.json())
-        .then(data => {
-            successCallback(data);
-            if (data.error === false && typeof successCallback === "function") {
-                successCallback(data);
-            }
-        })
-        .catch(error => {
-            console.log(error);
-           
+            console.log(error);           
         });
 }
 
-export const getCharitable = (successCallback) => {
-    fetch(`${API}/localCharities`)
-        .then(response => response.json())
-        .then(data => {
-            successCallback(data);
-            if (data.error === false && typeof successCallback === "function") {
-                successCallback(data);
-            }
-        })
-        .catch(error => {
-            console.log(error);
+
+
+// export const getFundation = (successCallback) => {
+//     fetch(`${API}/fundations`)
+//         .then(response => response.json())
+//         .then(data => {
+//             successCallback(data);
+//             if (data.error === false && typeof successCallback === "function") {
+//                 successCallback(data);
+//             }
+//         })
+//         .catch(error => {
+//             console.log(error);
            
-        });
-}
+//         });
+// }
+// export const getOrganization = (successCallback) => {
+//     fetch(`${API}/organizations`)
+//         .then(response => response.json())
+//         .then(data => {
+//             successCallback(data);
+//             if (data.error === false && typeof successCallback === "function") {
+//                 successCallback(data);
+//             }
+//         })
+//         .catch(error => {
+//             console.log(error);
+           
+//         });
+// }
+
+// export const getCharitable = (successCallback) => {
+//     fetch(`${API}/localCharities`)
+//         .then(response => response.json())
+//         .then(data => {
+//             successCallback(data);
+//             if (data.error === false && typeof successCallback === "function") {
+//                 successCallback(data);
+//             }
+//         })
+//         .catch(error => {
+//             console.log(error);
+           
+//         });
+// }
 export const sendMessage = (messageData, successCallback) => {
     fetch(`${Messages_API}`, {
         headers: {
-            "Authorization": API,
+            // "Authorization": API_KEY,
             "Content-Type": "application/json",
         },
         method: "POST",
@@ -61,4 +78,3 @@ export const sendMessage = (messageData, successCallback) => {
         })
         .catch(err => console.log(err));
 };
-

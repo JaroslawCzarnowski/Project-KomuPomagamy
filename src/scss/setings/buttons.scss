@@ -1,4 +1,5 @@
 @import '../setings/colors';
+@import '../setings/fonts';
 //base for all buttons
 .btn {
     background-color: $color_one;
@@ -6,68 +7,110 @@
         cursor: pointer;
     }
 }
-//home header buttons
+// HomeHeder button//
+.menu-top-button {
+    margin: 10px;
+    padding: 10px;
+    color: $color_four;
+    font-size: 14px;
+    font-family: $font-base;
+    background-color: white;
+    border: none;
+
+    &:hover {
+        border: 0.75px solid $color_three;
+    }
+}
+
+.menu-bottom-button {
+    margin: 10px;
+    text-decoration: none;
+    color: $color_four;
+    font-size: 18px;
+    font-family: $font-base;
+    text-align: left;
+    height: 52px;
+    background-color: white;
+    border: none;
+
+    &:hover {
+        border: 0.75px solid $color_black;
+        color: $color_black;
+    }
+}
+
+// button in login//
 .btn_menu_top {
     padding: 10px;
     margin: 1px;
     color: $color_four;
-    font-size: 1em;
+    font-size: 14px;
+    font-family:$font-base;
     text-decoration: none;
+    text-align: right;
     &:hover {
-        border: 1px solid $color_three;    
+        border: 0.75px solid $color_three;
         }
     };
 
 .btn_menu-bottom {
-        padding: 10px 20px;     
-        margin: 1px; 
-        // border: 1px solid $color_one;
+        padding: 10px;
         text-decoration: none;
         color: $color_four;   
-        font-size: 1.1em;   
-        height: 52px;  
+        font-size: 18px;
+        font-family:$font-base;
+        text-align: left;
         &:hover {
-         text-decoration:underline;
-         color: $color_black;    
+        border: 0.75px solid $color_black;
+        color: $color_black;    
         } 
     }
 .btn_menu_bottom__bottom {
-    text-decoration: none;
-    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
     color: $color_four;
-    border: 1px solid $color_black;
-    font-size: 1.4em;
-    width: 120px;
+    border: 0.75px solid $color_black;
+    font-size: 36px;
+    width: 310px;
+    height: 120px;
     text-align: center;
     text-transform: uppercase;
+    text-decoration: none;
     }
 
 
 .btn-simple-steps_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    padding: 10px 30px;
     color: $color_four;
-    border: 1px solid $color_black;
-    font-size: 1.4em;
-    width: 120px;
+    border: 0.75px solid $color_black;
+    font-size: 36px;
+    width: 310px;
+    height: 120px;
     text-align: center;
     text-transform: uppercase;
     }
 
 
-.btn_who-we-help-button {   
-    padding: 15px;
-    background-color: $color_one;
-    font-size: 1.2em;
-    width: 200px;
+.who-we-help--button {
+    border: 0.75px solid $color_black;
+    padding: 10px 30px;
+    font-size: 24px;
+    font-weight: 400;
+    width: 208px;
     text-align: center;
-    text-decoration: none;
+    background-color: white;
     
 }
 .form-submit-button {
     padding: 10px 20px;     
     margin: 1px; 
-    border: 1px solid $color_black;   
-    font-size: 0.8em;  
-    background-color: $color_one;  
+    border: 0.75px solid $color_black;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: white;
 }

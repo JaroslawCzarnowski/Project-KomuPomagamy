@@ -15,14 +15,14 @@
     {
       "id": 3,
       "name": "Mrówka",
-      "description": "fundacja na rzezc małych",
+      "description": "fundacja na rzecz małych",
       "items": "wszystkis ubrania z molami i innymi żyjatkami "
     }
   ],
   "organizations": [
     {
       "id": 1,
-      "name": "Zdrowy Org 1",
+      "name": "Zdrowy Ogr",
       "description": "Pracujemy na rzecz  Orków i Ogrów",
       "items": "Trupy z szafy."
     },
@@ -34,8 +34,8 @@
     },
     {
       "id": 3,
-      "name": "Nekromnomicon",
-      "description": "pracujemy dla Zombii i wszystkich orzywieńców",
+      "name": "Nekronomicon",
+      "description": "pracujemy dla Zombii i wszystkich ożywieńców",
       "items": "Wszytko co uważasz że jest zniszczone"
     }
   ],
@@ -49,14 +49,14 @@
     {
       "id": 2,
       "name": "Chroń Smoki",
-      "description": "Otwarzamy gatunki ",
+      "description": "Odtwarzamy gatunki ",
       "items": "Kazdy rodzaj ubrania do maskowania"
     },
     {
       "id": 3,
       "name": "Zaopiekuj się elfem",
       "description": "pomagamy elfom",
-      "items": "Ubrania na szczupłych ludzi"
+      "items": "Ubrania dla szczupłych ludzi"
     }
   ]
 }

@@ -1,11 +1,11 @@
-@import './colors';
+@import '../setings/colors';
 
-.who_we_help-container {
+.who-we-help-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-top: 50px;
     margin-bottom: 40px;
     height: 100vh;
 }
@@ -15,29 +15,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // margin-top: -160px;
 }
 
-.who-we-help-top-decoration {
+.who-we-help-title {
+    width: 320px;
+    height: 52px;
+    font-size: 38px;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.who-we-help-top__decoration {
     transform: scale(0.7);
     margin-bottom: 20px;
 }
 
-.who-we-help-top-options {
+.who-we-help-top__options {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 65%;
 }
 
-.who-we-help-top-text {
+.who-we-help-top__text {
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    // width: 60%;
     margin-top: 40px;
     margin-bottom: 50px;
-};
+    font-size: 22px;
+    font-weight: 400;
+    }
+
+    .who-we-help__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
 .who-we-help__list--container {
     display: flex;
     flex-direction: row;
@@ -45,39 +65,59 @@
     width: 70vw;
     border-bottom: 1px solid black;
     margin-bottom: 20px;
-};
+}
 
 .who-we-help__list--left {
     display: flex;
     flex-direction: column;
-};
+}
 
 .who-we-help__list--right {
    display: flex;
    align-items: flex-end;
-};
+}
 
 .who-we-help__list--name {
     margin: 0;
-};
+    font-family: $font-alt;
+    font-size: 26px;
+    font-weight: 300;
+    }
 
-.who-we-help__list--text {
-    margin: 0;    
-};
+    .who-we-help__list--text-left {
+        margin: 0;
+        font-family: $font-alt;
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+.who-we-help__list--text-right {
+    margin: 0; 
+    font-family: $font-alt;
+    font-size: 18px;
+    font-weight: 300;
+    }
 
 .who-we-help__list--underline {
     border-top: 1px solid $color_black;
     width: 80vw;
-};
+}
 
+.who-we-help__list--paginate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .who-we-help__list--paginate-list {
-  display: inline;
   list-style: none;  
   margin: 3px;
   border: 1px solid $color_black;
     & a {
         text-decoration: none;
-        padding: 5px;       
-    };
-};
+        padding: 5px;  
+        font-size: 18px;
+        font-weight: 400;
+        }
+    }

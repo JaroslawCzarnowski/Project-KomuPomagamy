@@ -4,7 +4,7 @@ const ThreeColumns = () => {
     return (
         <div className="three_columns_container">
             <div className="three_columns_column">
-                <p className="three_columns_number">8</p>
+                <p className="three_columns_number">10</p>
                 <h3 className="three_columns_heading">oddanych worków</h3>
                 <p className="three_columns_text">
                     Lorem ipsum dolor sit amet, consectetur adipisc 
@@ -13,7 +13,7 @@ const ThreeColumns = () => {
                 </p>
             </div>
             <div className="three_columns_column">
-                <p className="three_columns_number">20</p>
+                <p className="three_columns_number">5</p>
                 <h3 className="three_columns_heading">wspartych organizacji</h3>
                 <p className="three_columns_text">
                     Lorem ipsum dolor sit amet, consectetur adipisc 
@@ -22,7 +22,7 @@ const ThreeColumns = () => {
                 </p>
             </div>
             <div className="three_columns_column">
-                <p className="three_columns_number">40</p>
+                <p className="three_columns_number">7</p>
                 <h3 className="three_columns_heading">zorganizowanych zbiórek</h3>
                 <p className="three_columns_text">
                     Lorem ipsum dolor sit amet, consectetur adipisc 

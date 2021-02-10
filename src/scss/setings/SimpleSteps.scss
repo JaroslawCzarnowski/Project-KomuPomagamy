@@ -9,16 +9,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 20px;
     & p {
         margin-bottom: 10px;
         margin-top: 40px;
     }
 }
+.simple_steps_top_text {
+    font-size: 38px;
+    font-weight: 400;
+}
 
 .simple_steps_top_decoration {      
-    transform: scale(0.7);
+    transform: scale(1.4);
 }
 
 .simple_steps_middle {
@@ -27,8 +29,10 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 0 100px 0 100px;
-    background-color: $color_one;    
+    margin-top: 30px;
+    padding:0 100px 0 100px;
+    background-color: $color_seven;
+    height: 325px;
 }
 
 .simple_steps_middle_align {
@@ -38,27 +42,28 @@
 }
 
 .simple_steps_middle_decoration {
-    margin-top: 30px;    
-    transform: scale(0.7);
+    margin-top: 30px;
+    transform: scale(1.1);
 }
 
 .simple_steps_middle_underlined {    
-    padding-bottom: 10px;
-    margin-top: 0;
-    width: 60%;
+    margin-top: 10.5px;
+    margin-bottom: 15px;
+    width: 70%;
+    font-size: 18px;
 }
 
 .simple_steps_middle_underlined-underline {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid $color_black;
-   width: 40%;
+    border-bottom: 0.7px solid $color_black;
+    width: 50%;
 }
 
-.simple_teps_middle_bottom-text {
+.simple_steps_middle_bottom-text {
     margin-bottom: 30px;
-    width: 60%;
+    font-size: 16px;
 }
 
 .simple-steps-bottom {

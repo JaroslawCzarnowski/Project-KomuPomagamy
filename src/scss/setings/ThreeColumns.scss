@@ -1,7 +1,7 @@
 @import './colors';
 
 .three_columns_container{
-    margin-top: 150px;
+    height: 385px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -11,17 +11,22 @@
 
 }
 .three_columns_number {
-    font-size: 2em;
-    margin-top: 10px;
-    margin-bottom: 10Px;
-    font-weight: 100;
+    font-size: 90px;
+    margin-bottom: 50px;
+    font-weight: 300;
+    font-family: $font-base;
 }
 .three_columns_heading {
     text-transform: uppercase;
-    font-weight: 300;
-    margin-top: 10;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: $font-alt;
 }
 .three_columns_text {
-    margin-top: 30px;
-    font-weight: 100;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-weight: 300;
+    font-family: $font-alt;
 }

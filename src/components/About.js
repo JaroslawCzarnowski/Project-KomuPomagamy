@@ -7,8 +7,10 @@ import People from '../assets/image/People.jpg';
 const About = () => {
     return (
         <div className="about-container" id="aboutUs">
-            <div className="aboutu_us">
+            <div className="about_us">
+                <div  className='about_us_title'>
                 <p>O nas</p>
+                </div>
                 <img src={Decoration} alt="decor" className="about_us_decoration" />
                 <p className="about_us_text">Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. 
                     Bunya nuts black-eyed pea prairie turnip leek lentil turnip greens parsnip.</p>
