@@ -1,0 +1,45 @@
+
+.step-bottom-container {
+    display: flex;
+    // flex-direction: row;
+    // height: 40vh;
+}
+
+.step-bottom-left {
+    position: absolute;
+    // width: 50%;
+    // margin-left: 115px;
+    & p {
+        padding-top: 20px;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    & form {
+        display: flex;
+        flex-direction: column;
+        & p {
+            font-size: 36px;
+            font-weight: 600;
+        }
+        & label {
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: 300;
+            & input {
+                margin-right: 5px;
+                border-radius: 1px;
+
+            }
+        }
+    }
+}
+
+.step-bottom-right {
+
+    & img {
+        // width: 100vw;
+        // height: 78vh;
+    }
+    // width: 50%;
+   
+}

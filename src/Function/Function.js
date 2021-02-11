@@ -51,3 +51,22 @@ export const logOut = (logged, locStorKey) => {
     logged = false;
     localStorage.setItem(locStorKey, false);      
 }
+
+// for inputs in simple steps form
+export  const handleChoice = param => (e) => {     
+    localStorage.setItem(param, e.target.value);       
+    console.log(e.target.value);       
+}   
+//for radio boxes in simple steps form
+export const handleRadioChoice = param => (e) => {
+    // e.preventDefault();
+    localStorage.setItem(param, e.target.id);
+    console.log(e.target.id);
+  }
+  //for text input to override radio choices
+  export const handleOverrideRadioWithText = param => (e) => {
+          if (e.target.value != null) {
+            localStorage.setItem(param, e.target.value);       
+            console.log(e.target.value);
+          }       
+      }

@@ -15,7 +15,7 @@
     font-size: 14px;
     font-family: $font-base;
     background-color: white;
-    border: none;
+    border: 0.75px solid transparent;
 
     &:hover {
         border: 0.75px solid $color_three;
@@ -48,6 +48,7 @@
     font-family:$font-base;
     text-decoration: none;
     text-align: right;
+    border: 0.75px solid transparent;
     &:hover {
         border: 0.75px solid $color_three;
         }
@@ -60,6 +61,7 @@
         font-size: 18px;
         font-family:$font-base;
         text-align: left;
+        border: 0.75px solid transparent;
         &:hover {
         border: 0.75px solid $color_black;
         color: $color_black;    

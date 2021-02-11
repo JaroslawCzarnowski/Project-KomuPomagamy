@@ -79,15 +79,15 @@ import HomeHeaderButton from './HomeHeaderButton';
                 nullifyInputValue(passwordInputField);    
         }
         return (
-            <div className="login-container">
-                <div className="login-menu-container">
-                    <HomeHeaderButton homeOrLogin={"notHome"} loggedIn={false} />
-                </div>
-                <div className="login-text-container">
-                    <h1 className="login-text">Zaloguj się</h1>
-                    <img src={Decoration} alt="decor" className="who-we-help-top_decoration" />
-                </div>
-                <form onSubmit={
+            <div className="login-container container-full">       
+            <div className="login-menu-container" >         
+              <HomeHeaderButton homeOrLogin={"notHome"} loggedIn={loggedIn}/> 
+            </div>   
+            <div className="login-text-container">
+                <h1 className="login-text">Zaloguj się</h1>
+                <img src={Decoration} alt="decor" className="who-we-help-top__decoration" />
+            </div>           
+            <form onSubmit={
                  handleLoginValidation(passwordData, emailData,
                      setLoggedIn, setPasswordData, setEmailData,
                     `errorMessageEmail`, `errorMessagePassword`, `loginEmail`,`loginPassword`,
@@ -107,13 +107,10 @@ import HomeHeaderButton from './HomeHeaderButton';
                         <Link to="/signUp">
                              <button className="btn form-submit-button">Załóż konto</button>
                         </Link>   
-                       <Link to="/login">
-                            <button className="btn form-submit-button" type="submit">Zaloguj się</button>
-                       </Link>
+                        <button className="btn form-submit-button" type="submit">Zaloguj się</button>
                     </div>                               
             </form>
-            </div>
-        );
-    };
-
+        </div>
+    )
+}
 export default Login;

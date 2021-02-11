@@ -1,0 +1,29 @@
+
+.rhomb-container {
+    height: 190px;
+    width: 190px;
+    border: 0.75px solid $color_black;
+    margin: 5px;
+    transform: rotateZ(45deg);
+    display: flex;
+    align-items: center;
+   text-align: center;
+
+}
+
+.rhomb-content {
+    transform: rotateZ(-45deg) translateX(20px);
+    & p {
+        // transform: translateX(-15px);
+        transform: translateX(15px);
+        font-size: 32px;
+        font-weight: 300;
+    }
+    & .rhomb-text {
+        margin-top: 0;       
+        width: 80px;
+        font-size: 32px;
+        font-weight: 300;
+        transform: translateX(8px);
+    }
+}

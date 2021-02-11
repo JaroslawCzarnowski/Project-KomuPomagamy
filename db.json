@@ -3,20 +3,20 @@
     {
       "id": 1,
       "name": "Mały Piesek",
-      "description": "fundacja na rzecz schronisk",
-      "items": "niepotrzbne koce, oraz posciel"
+      "description": "Fundacja na rzecz schronisk",
+      "items": "Niepotrzbne koce, oraz posciel"
     },
     {
       "id": 2,
       "name": "Zoty kolczyk",
-      "description": "fundacja na rzecz bogatych",
-      "items": "niepotrzebne futra, skóry"
+      "description": "Fundacja na rzecz bogatych",
+      "items": "Niepotrzebne futra, skóry"
     },
     {
       "id": 3,
       "name": "Mrówka",
-      "description": "fundacja na rzecz małych",
-      "items": "wszystkis ubrania z molami i innymi żyjatkami "
+      "description": "Fundacja na rzecz małych",
+      "items": "Wszystkis ubrania z molami i innymi żyjatkami "
     }
   ],
   "organizations": [
@@ -35,9 +35,16 @@
     {
       "id": 3,
       "name": "Nekronomicon",
-      "description": "pracujemy dla Zombii i wszystkich ożywieńców",
+      "description": "Pracujemy dla Zombii i wszystkich ożywieńców",
       "items": "Wszytko co uważasz że jest zniszczone"
+    },
+    {
+      "id": 4,
+      "name": "Galopujacy Żebrak",
+      "description": "Pracujemy dla najbiedniejszych",
+      "items": "Co uważasz że bidnym się przyda"
     }
+      
   ],
   "localCharities": [
     {
@@ -55,7 +62,7 @@
     {
       "id": 3,
       "name": "Zaopiekuj się elfem",
-      "description": "pomagamy elfom",
+      "description": "Pomagamy elfom",
       "items": "Ubrania dla szczupłych ludzi"
     }
   ]
