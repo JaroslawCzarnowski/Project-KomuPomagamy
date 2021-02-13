@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import Decoration from '../assets/icons/Decoration.svg';
 import {Link} from  'react-router-dom';
 import HomeHeaderButton from './HomeHeaderButton';
+import { fetchLogged, registerNewUser } from '../Function/Function';
+
 
 
 const SignUp = () => {
@@ -109,7 +111,12 @@ const validColor = validColor2;
                 setLoggedIn(true);
                 localStorage.setItem("loggedIn", true);    
                 localStorage.setItem("step", 1)
-                //fetch post here       
+                fetchLogged(true);
+                registerNewUser(emailData, passwordData);
+                //fetch post here 
+                setTimeout(() => {
+                    window.location.href="/signUpSuccesful";   
+                },10);      
             }      
                 nullifyStateString(setPasswordData);
                 nullifyStateString(setEmailData);
@@ -127,11 +134,7 @@ const validColor = validColor2;
             <h1 className="login-text">Załóż konto</h1>
             <img src={Decoration} alt="decor" className="who-we-help-top__decoration" />
         </div>           
-        <form onSubmit={handleSignUpSubmit(passwordData, passwordRepeatData, emailData,
-         setLoggedIn, setPasswordData, setPasswordRepeatData,setEmailData,
-         `errorEmail`, `errorPassword`, `errorRepeatPassword`, `loginEmail2`,`loginPassword2`, `loginPasswordRepeat`, 
-         `black`, `#DC143C`
-        )}>
+        <form >
                 <div className="login-form-container">
                     <label className="login-form-top">Email
                         <input id="loginEmail2" type="email" onChange={handleEmailInput(setEmailData, `loginName`)}></input>
@@ -147,7 +150,11 @@ const validColor = validColor2;
                     </label>
                 </div>
                 <div className="login-form-buttons-container" >    
-                    <button className="btn form-submit-button">Załóż konto</button>                    
+                    <button className="btn form-submit-button" onClick={handleSignUpSubmit(passwordData, passwordRepeatData, emailData,
+                        setLoggedIn, setPasswordData, setPasswordRepeatData,setEmailData,
+                        `errorEmail`, `errorPassword`, `errorRepeatPassword`, `loginEmail2`,`loginPassword2`, `loginPasswordRepeat`, 
+                        `black`, `#DC143C`
+                    )}>Załóż konto</button>                    
                     <Link to="/login">
                         <button className="btn form-submit-button">Zaloguj się</button>
                     </Link>                          

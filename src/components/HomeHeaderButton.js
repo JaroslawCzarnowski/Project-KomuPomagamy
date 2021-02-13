@@ -12,7 +12,7 @@ const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {
         logged = false;
         localStorage.setItem("loggedIn", false);      
     }  
-    if (homeOrLogin === "home" && logged === true) {
+    if (homeOrLogin === "home" && loggedIn === true) {
         return (
             <>
             <div className="login-menu-container">
@@ -75,7 +75,7 @@ const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {
             </>
         )
     }
-    else if (homeOrLogin !== "home" && logged === true) {
+    else if (homeOrLogin !== "home" && loggedIn === true) {
         return (
             <>
                 <div className="login-menu-container">
@@ -93,7 +93,7 @@ const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {
             </>
         )
     }
-    else if (homeOrLogin !== "home" && logged === false) {
+    else if (homeOrLogin !== "home" && loggedIn === false) {
         return (
             <>
     <div className="login-menu-container">
