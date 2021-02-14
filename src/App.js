@@ -18,8 +18,8 @@ function App () {
           <Route path="/steps" component={StepsBase} />
           <Route path='/SignUp' component={SignUp} />
           <Route path='/logOut'component={LogOut} />
-          <Route patch='./loginSuccesful' component={LoginSuccesful} />
-          <Route patch='./singUpSuccesful' component={SignUpSaccesful}/>
+          <Route path='./loginSuccesful' component={LoginSuccesful} />
+          <Route path='./singUpSuccesful' component={SignUpSaccesful}/>
           <Route path='/' component={Home} /> 
         </Switch>         
       </Router>

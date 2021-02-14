@@ -86,8 +86,3 @@ export const handleRadioChoice = param => (e) => {
         }
         postRegister(userData);
     }
-    export const logOut = (logged, locStorKey) => {
-        logged = false;
-        localStorage.setItem(locStorKey, false);  
-        // fetchLogged(false);    
-    }

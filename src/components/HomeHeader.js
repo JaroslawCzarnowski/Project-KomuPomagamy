@@ -6,18 +6,19 @@ import HomeHeaderButton from './HomeHeaderButton';
 import { getLoggedBool } from '../API/Fetch';
 
 
-const HomeHeader = () => {
+const HomeHeader = (homeOrLogin, loggedIn) => {
     let [logged, setLogged] = useState("");
     useEffect(() => {
         getLoggedBool(setLogged);    
     }, [])
+    console.log(logged);
     return (
         <div className= "heder_container" >
             <img src={header} className = "header_image" alt="header_image_img"/>
             <div className="header_menu">
             <div className= "header_menu_right">
             <div className= "login-menu-container">
-            <HomeHeaderButton homeOrLogin={"home"} loggedIn={logged}/>
+            <HomeHeaderButton homeOrLogin={"home"} loggedIn={logged}/> 
             </div>
             <div className='header_menu_bottom'>
                 <div className='header_menu_bottom_text'>

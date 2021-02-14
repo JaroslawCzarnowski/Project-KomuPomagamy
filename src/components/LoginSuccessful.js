@@ -11,26 +11,23 @@ const LoginSuccesful = () => {
     useEffect(() => {        
        getLoggedBool(setLogged);    
     }, [])
-    console.log(logged, "logged w logout");
+    console.log(logged, "logged w loginS");
     fetchLogged(true);
     return (
-        <div className="login-container">       
-            <div className="login-menu-container" >                   
-              
-              <HomeHeaderButton homeOrLogin={"notHome"} loggedIn={logged}/>        
-    
-            </div>   
-            <div className="login-text-container">
-                <h1 className="login-text">Zalogowanie nastąpiło pomyślnie</h1>
-                <img src={Decoration} alt="decor" className="who-we-help-top__decoration" />
-            </div>     
-            <div className="login-form-buttons-container" >                        
-                <Link to="/home">
-                    <button className="btn form-submit-button">Strona główna</button>
-                </Link>                     
-            </div>              
-        </div>
-    )
-}
-
-export default LoginSuccesful;
+                <div className="login-container container-full">       
+                    <div className="login-menu-container" >                   
+                      <HomeHeaderButton homeOrLogin={"notHome"} loggedIn={logged}/>        
+                    </div>   
+                    <div className="login-text-container">
+                        <h1 className="login-text">Zalogowanie nastąpiło pomyślnie</h1>
+                        <img src={Decoration} alt="decor" className="who-we-help-top__decoration" />
+                    </div>     
+                    <div className="login-form-buttons-container" >                        
+                        <Link to="/home">
+                            <button className="btn form-submit-button" >Strona główna</button>
+                        </Link>                     
+                    </div>              
+                </div>
+            )
+        }
+        export default LoginSuccesful;

@@ -7,17 +7,19 @@ import { getLoggedBool } from '../API/Fetch';
 
 const SignUpSaccesful = () => {
     let [logged, setLogged] = useState("");
+    
     useEffect(() => {        
        getLoggedBool(setLogged);    
     }, [])
-    console.log(logged, "logged w logout");
-    fetchLogged(true);
-    return (
-        <div className="login-container">       
-            <div className="login-menu-container" >                   
-              
-              <HomeHeaderButton homeOrLogin={"notHome"} loggedIn={false}/>        
     
+    console.log(logged, "logged w logout");
+    
+    fetchLogged(true);
+    
+    return (
+        <div className="login-container-full">       
+            <div className="login-menu-container" >                   
+              <HomeHeaderButton homeOrLogin={"notHome"} loggedIn={logged}/>        
             </div>   
             <div className="login-text-container">
                 <h1 className="login-text">Zarejestrowano pomyślnie</h1>
@@ -32,4 +34,4 @@ const SignUpSaccesful = () => {
     )
 }
 
-export default SignUpSaccesful ;
+export default SignUpSaccesful;

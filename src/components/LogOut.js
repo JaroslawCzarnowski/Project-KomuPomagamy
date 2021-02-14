@@ -1,15 +1,21 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Decoration from '../assets/icons/Decoration.svg';
 import HomeHeaderButton from '../components/HomeHeaderButton';
 import {Link} from 'react-router-dom';
+import { getLoggedBool } from '../API/Fetch';
+import { fetchLogged } from '../Function/Function';
 
 const LogOut = () => {
+    let [logged, setLogged] = useState("");
+    useEffect(() => {        
+        getLoggedBool(setLogged);    
+    }, [])
+    console.log(logged, "logged w logout");
+    fetchLogged(false);
     return (
         <div className="login-container">       
             <div className="login-menu-container" >                   
-              
               <HomeHeaderButton homeOrLogin={"notHome"} loggedIn={false}/>        
-    
             </div>   
             <div className="login-text-container">
                 <h1 className="login-text">Wylogowanie nastąpiło pomyślnie</h1>

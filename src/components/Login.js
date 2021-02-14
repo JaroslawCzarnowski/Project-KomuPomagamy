@@ -106,7 +106,7 @@ import { fetchLogged } from '../Function/Function';
                              <button className="btn form-submit-button">Załóż konto</button>
                         </Link>   
                         <button className="btn form-submit-button" type="submit" onClick={
-                 handleLoginValidation(passwordData, emailData,
+                    handleLoginValidation(passwordData, emailData,
                      setLoggedIn, setPasswordData, setEmailData,
                     `errorMessageEmail`, `errorMessagePassword`, `loginEmail`,`loginPassword`,
                      `black`, `#DC143C`)           
