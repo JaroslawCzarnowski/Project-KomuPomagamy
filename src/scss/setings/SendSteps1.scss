@@ -1,14 +1,12 @@
-
 .step-bottom-container {
     display: flex;
     // flex-direction: row;
     // height: 40vh;
 }
-
 .step-bottom-left {
     position: absolute;
     // width: 50%;
-    // margin-left: 115px;
+    margin-left: 142px;
     & p {
         padding-top: 20px;
         font-size: 24px;
@@ -28,14 +26,7 @@
             & input {
                 margin-right: 5px;
                 border-radius: 1px;
-
             }
         }
     }
 }
-
-.container-full {
-        width: 100vw;
-    }
-    // width: 50%;
-   

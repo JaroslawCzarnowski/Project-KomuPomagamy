@@ -5,17 +5,18 @@
     border: 0.75px solid $color_black;
     margin: 5px;
     transform: rotateZ(45deg);
-    display: flex;
+    // display: flex;
+    justify-content: center;
     align-items: center;
-   text-align: center;
+    text-align: center;
 
 }
 
 .rhomb-content {
     transform: rotateZ(-45deg) translateX(20px);
     & p {
-        // transform: translateX(-15px);
-        transform: translateX(15px);
+        transform: translateX(-30%);
+        // transform: translateX(15px);
         font-size: 32px;
         font-weight: 300;
     }
@@ -24,6 +25,6 @@
         width: 80px;
         font-size: 32px;
         font-weight: 300;
-        transform: translateX(8px);
+        transform: translateX(-5%);
     }
 }

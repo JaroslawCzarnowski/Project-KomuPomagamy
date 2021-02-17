@@ -1,0 +1,125 @@
+.steps-container {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+}
+.steps-top {
+    display: flex;
+    flex-direction: row;
+    // margin-bottom: -25px;   
+}
+.steps-top-left {
+    // width: 50%;
+}
+.steps-top-right {
+    width: 743px;
+    // display: flex;
+    // flex-direction: row;
+    margin-right: 142px;
+    // justify-content: center;
+}
+.steps-left-side--img {
+    width: 760px;
+    height:800px;
+}
+.steps-top-right__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+    width: 632px; 
+    & p { 
+        text-align: center;       
+        font-size: 38px;
+        font-weight: 400;
+        // line-height: 0;     
+    }
+    & img {
+        margin-bottom: 20px;
+    }
+    & span {
+        font-size: 40px;
+        font-weight: 300;
+        // margin-top: 26px;
+        margin-bottom: 50px;
+    }
+}
+.steps-right-side--content__rhombs {
+    display: flex;
+    flex-direction: row;   
+}
+.steps-middle {    
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: -5px;
+    background-color: $color_three;
+    & h1 {
+            padding-top: 50px;
+            margin-bottom: 5px;  
+            font-size: 36px;  
+            font-weight: 600;      
+    }
+    & h3 {
+        padding-bottom: 60px;
+        line-height: 1;
+        margin-bottom: 0;
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
+.step2-form {    
+    & select {
+        font-size: 24px;
+        font-weight: 300;
+    }
+}
+.step-bottom-left {
+    width: 100%;
+}
+.step3-paragraph {
+    font-size: 24px;
+    font-weight: 600;
+}
+.steps-choice-buttons {   
+    & button {
+        margin: 10px;
+        padding: 20px 10px;
+        font-size: 24px;
+        font-weight: 300;
+        background-color: transparent;
+    }
+}
+.step4-form__container {
+    display: flex;
+    // width: 110%;
+}
+.step4-form__left {
+    display: flex;
+    flex-direction: column;
+    // width: 55%;
+    & label {
+        display: flex;
+        width: 100px;
+        & input {
+            margin-left: 20px;
+        }
+    }
+}
+.step4-form__right {
+    display: flex;
+    flex-direction: column;
+    & label {
+        display: flex;
+        width: 200px;
+        & textarea {
+            width: 200px;
+        }
+        & input {
+            margin-left: 20px;
+        }
+    }
+}
+.step-form__buttons {
+    display: flex;
+}

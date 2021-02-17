@@ -82,10 +82,7 @@ const Contact = () => {
             <div className="contact-right-side">
                 <p className="about-decorated-text--large">Skontaktuj się z nami</p>
                     <img src={Decoration} alt="decor" className="who-we-help-top__decoration" />
-                <form className="contact-form" onSubmit={handleMessageSubmit(nameData, emailData, messageData,
-                                                                            `nameField`, `emailField`, `messageField`, 
-                                                                             sendMessage,
-                                                                             setNameData, setEmailData, setMessageData)}>
+                <form className="contact-form" onSubmit={handleMessageSubmit(nameData, emailData, messageData, `nameField`, `emailField`, `messageField`, sendMessage,setNameData, setEmailData, setMessageData)}>
                     <div className="contact-form-fields">
                         <label className="contact-form-input--label">Wpisz swoje imię
                             <input id="nameField" className="contact-form-input--input" type="name" name="firstName" onChange={handleValueInput(setNameData)}></input>
