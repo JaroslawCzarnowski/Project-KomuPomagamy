@@ -1,5 +1,6 @@
-
+// json-server --watch db.json --host 127.0.0.1
 //nullify state after submit for submitHandlers in forms
+import {postRegister, setLoggedFetch} from '../API/Fetch';
 export const nullifyState = (setStateToClear) => {
     setTimeout(() => {
         setStateToClear([]);
@@ -69,4 +70,19 @@ export const handleRadioChoice = param => (e) => {
             localStorage.setItem(param, e.target.value);       
             console.log(e.target.value);
           }       
-      }
+    }
+    export const fetchLogged = (bool) => {
+        let loggedInIs = {
+            loggedIn: bool
+        }
+        setLoggedFetch(loggedInIs);
+    }
+    //signup new user, send data to API
+    export const registerNewUser = (userEmail, userPassword) => {
+        const userData = {          
+            "userEmail": userEmail,
+            "userPassword": userPassword,
+            "orders": []
+        }
+        postRegister(userData);
+    }

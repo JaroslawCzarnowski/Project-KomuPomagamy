@@ -2,14 +2,13 @@ import React, {useState, useEffect} from 'react';
 import Decoration from '../assets/icons/Decoration.svg';
 import {Link} from  'react-router-dom';
 import HomeHeaderButton from './HomeHeaderButton';
+import { fetchLogged } from '../Function/Function';
 
     const Login = () => {
         let [emailData, setEmailData] = useState([]);
         let [passwordData, setPasswordData] = useState([]);   
         let [loggedIn, setLoggedIn] = useState(false);  
-    useEffect(() => {
-        localStorage.setItem("loggedIn", loggedIn);
-    }, [])
+    
     const nullifyState = (setStateToClear) => {
         setTimeout(() => {
             setStateToClear([]);
@@ -66,12 +65,16 @@ import HomeHeaderButton from './HomeHeaderButton';
                console.log("przesłano pomyślnie");   
                 setLoggedIn(true);
                 localStorage.setItem("loggedIn", true);    
-                 localStorage.setItem("step", 1)
+                localStorage.setItem("step", 1)
+                fetchLogged(true);
+                window.location.href="/loginSuccesful";
+
             } 
             else {
                 console.log("login nieudany")
                 setLoggedIn(false);
                 localStorage.setItem("loggedIn", false);
+                fetchLogged(false);
             }     
                 nullifyState(setPasswordData);
                 nullifyState(setEmailData);
@@ -87,12 +90,7 @@ import HomeHeaderButton from './HomeHeaderButton';
                 <h1 className="login-text">Zaloguj się</h1>
                 <img src={Decoration} alt="decor" className="who-we-help-top__decoration" />
             </div>           
-            <form onSubmit={
-                 handleLoginValidation(passwordData, emailData,
-                     setLoggedIn, setPasswordData, setEmailData,
-                    `errorMessageEmail`, `errorMessagePassword`, `loginEmail`,`loginPassword`,
-                     `black`, `#DC143C`)           
-                    }>
+            <form >
                     <div className="login-form-container">
                         <label>Email
                             <input id="loginEmail" type="email" onChange={handleEmailInput(setEmailData, `loginName`)}></input>
@@ -107,7 +105,12 @@ import HomeHeaderButton from './HomeHeaderButton';
                         <Link to="/signUp">
                              <button className="btn form-submit-button">Załóż konto</button>
                         </Link>   
-                        <button className="btn form-submit-button" type="submit">Zaloguj się</button>
+                        <button className="btn form-submit-button" type="submit" onClick={
+                    handleLoginValidation(passwordData, emailData,
+                     setLoggedIn, setPasswordData, setEmailData,
+                    `errorMessageEmail`, `errorMessagePassword`, `loginEmail`,`loginPassword`,
+                     `black`, `#DC143C`)           
+                    }>Zaloguj się</button>
                     </div>                               
             </form>
         </div>

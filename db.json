@@ -44,7 +44,6 @@
       "description": "Pracujemy dla najbiedniejszych",
       "items": "Co uważasz że bidnym się przyda"
     }
-      
   ],
   "localCharities": [
     {
@@ -65,5 +64,12 @@
       "description": "Pomagamy elfom",
       "items": "Ubrania dla szczupłych ludzi"
     }
-  ]
+  ],
+  "loggedIn": [
+    {
+      "loggedIn": false,
+      "id": 1
+    }
+  ],
+  "users": []
 }

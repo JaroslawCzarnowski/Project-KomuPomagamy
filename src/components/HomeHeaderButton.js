@@ -2,17 +2,20 @@ import React, {useState, useEffect} from 'react';
 import {Link} from 'react-scroll';
 import {Link as Link2} from 'react-router-dom';
 import { loginCheckForMenuView, logOut} from '../Function/Function.js';
+import { getLoggedBool } from '../API/Fetch.js';
 
 
 const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {  
-    let logged = loginCheckForMenuView("loggedIn");
+    let [logged, setLogged] = useState([]);
+    useEffect(() => {
+        getLoggedBool(setLogged);  
+        // temp.push(logged);
+    }, [])
     let userName = localStorage.getItem("loginName");
+    // console.log(logged, "user to spr");
     localStorage.setItem("NextStep", 1);
-    const logOut = () => {
-        logged = false;
-        localStorage.setItem("loggedIn", false);      
-    }  
-    if (homeOrLogin === "home" && logged === true) {
+
+    if (homeOrLogin === "home" && loggedIn === true || loggedIn === "true" ) {
         return (
             <>
             <div className="login-menu-container">
@@ -44,7 +47,7 @@ const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {
             </>
         )
     }
-    else if (homeOrLogin === "home" && loggedIn === false) {
+    else if (homeOrLogin === "home" && loggedIn === false || loggedIn === "false" || loggedIn === "") {
         return (
             <>
              <div className="login-menu-container">
@@ -75,7 +78,7 @@ const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {
             </>
         )
     }
-    else if (homeOrLogin !== "home" && logged === true) {
+    else if (homeOrLogin !== "home" && loggedIn === true || loggedIn === "true" ) {
         return (
             <>
                 <div className="login-menu-container">
@@ -93,7 +96,7 @@ const HomeHeaderButton = ({homeOrLogin, loggedIn}) => {
             </>
         )
     }
-    else if (homeOrLogin !== "home" && logged === false) {
+    else if (homeOrLogin !== "home" && loggedIn === false || loggedIn === "false" || loggedIn === "") {
         return (
             <>
     <div className="login-menu-container">

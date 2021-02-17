@@ -1,26 +1,24 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import header from "../assets/image/Home-Hero-Image.jpg";
 import Decoration from '../assets/icons/Decoration.svg';
 import {Link} from 'react-router-dom';
 import HomeHeaderButton from './HomeHeaderButton';
+import { getLoggedBool } from '../API/Fetch';
 
 
-const HomeHeader = () => {
-    let isLoggedIn = localStorage.getItem("loggedIn");    
-    console.log(isLoggedIn, "logged w homeHeader")
-    if (isLoggedIn === "true") {
-        isLoggedIn = true;
-    }
-    else {
-        isLoggedIn = false;
-    }
+const HomeHeader = (homeOrLogin, loggedIn) => {
+    let [logged, setLogged] = useState("");
+    useEffect(() => {
+        getLoggedBool(setLogged);    
+    }, [])
+    console.log(logged);
     return (
         <div className= "heder_container" >
             <img src={header} className = "header_image" alt="header_image_img"/>
             <div className="header_menu">
             <div className= "header_menu_right">
             <div className= "login-menu-container">
-            <HomeHeaderButton homeOrLogin={"home"} loggedIn={isLoggedIn}/>
+            <HomeHeaderButton homeOrLogin={"home"} loggedIn={logged}/> 
             </div>
             <div className='header_menu_bottom'>
                 <div className='header_menu_bottom_text'>
