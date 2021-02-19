@@ -1,6 +1,8 @@
 import React from 'react';
 import bear from '../assets/image/Background-Form.jpg';
 import { nextStep } from '../Function/Function';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
 
 
 
@@ -12,7 +14,8 @@ const handleRadioChoice = param => (e) => {
     //local storage item check in console
     console.log(localStorage.getItem("step"));    
 }
-    return (           
+    return (
+        <>           
             <div className="step-bottom-container container-full">
                 <div className="step-bottom-left">
                     <p>Krok 1/4</p>
@@ -39,7 +42,12 @@ const handleRadioChoice = param => (e) => {
                 <div className="step-bottom-right">
                     <img className="container-full" src={bear} alt="bear"/>
                 </div>
-            </div>       
+            </div> 
+            <Contacts/>
+            <Footer/>            
+            </>
+            
+          
     )
 }
 

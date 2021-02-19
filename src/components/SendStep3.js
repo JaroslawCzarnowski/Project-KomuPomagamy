@@ -1,11 +1,14 @@
 import React from 'react';
-
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
 import bear from '../assets/image/Background-Form.jpg';
 import { handleChoice, handleOverrideRadioWithText, handleRadioChoice, nextStep } from '../Function/Function';
 
 const  SendStep3 = () => {     
 
-    return (           
+    return (
+        <>
+               
             <div className="step-bottom-container">
                 <div className="step-bottom-left">
                     <p>Krok 3/4</p>
@@ -38,7 +41,10 @@ const  SendStep3 = () => {
                 <div className="step-bottom-right">
                     <img src={bear} alt="bear"/>
                 </div>
-            </div>       
+            </div>
+            <Contacts/>
+            <Footer/>            
+            </>
     )
 }
 

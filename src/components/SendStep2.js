@@ -2,13 +2,16 @@ import React from 'react';
 
 import bear from '../assets/image/Background-Form.jpg';
 import { nextStep } from '../Function/Function';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
 
 const  SendStep2 = () => {  
     const handleChoice = param => (e) => {     
         localStorage.setItem(param, e.target.value);       
         console.log(e.target.value);       
     }   
-    return (           
+    return (
+        <>           
             <div className="step-bottom-container">
                 <div className="step-bottom-left">
                     <p>Krok 2/4</p>
@@ -32,7 +35,10 @@ const  SendStep2 = () => {
                 <div className="step-bottom-right">
                     <img src={bear} alt="bear"/>
                 </div>
-            </div>       
+            </div>
+            <Contacts/>
+            <Footer/>            
+            </>    
     )
 }
 

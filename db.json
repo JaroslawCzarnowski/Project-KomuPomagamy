@@ -67,9 +67,16 @@
   ],
   "loggedIn": [
     {
-      "loggedIn": false,
+      "loggedIn": true,
       "id": 1
     }
   ],
-  "users": []
+  "users": [
+    {
+      "userEmail": "aaa@op.pl",
+      "userPassword": "111111",
+      "orders": [],
+      "id": 1
+    }
+  ]
 }

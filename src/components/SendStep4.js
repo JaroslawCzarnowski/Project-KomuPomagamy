@@ -1,10 +1,13 @@
 import React from 'react';
 import bear from '../assets/image/Background-Form.jpg';
 import { handleChoice, nextStep } from '../Function/Function';
+import Contacts from '../components/Contacts';
+import Footer from '../components/Footer';
 
 const  SendStep4 = () => {  
 
-    return (           
+    return (
+        <>          
             <div className="step-bottom-container">
                 <div className="step-bottom-left">
                     <p>Krok 4/4</p>
@@ -12,7 +15,7 @@ const  SendStep4 = () => {
                         <p>Podaj adres oraz termin odbiorurzeczy przez kuriera</p>                              
                         <div className="step4-form__container">
                             <div className="step4-form__left">
-                                <span className="step3-paragraph">Adres odbioru:</span>
+                                <span className="step4-paragraph">Adres odbioru:</span>
                                     <label>Ulica
                                         <input type="text" onChange={handleChoice("street")} ></input>
                                     </label>
@@ -29,7 +32,7 @@ const  SendStep4 = () => {
                                     </label>
                                 </div>                        
                                 <div className="step4-form__right">
-                                    <span className="step3-paragraph">Termin odbioru:</span>
+                                    <span className="step4-paragraph">Termin odbioru:</span>
                                     <label>Data
                                         <input type="date" onChange={handleChoice("date")}></input>
                                     </label>
@@ -50,7 +53,10 @@ const  SendStep4 = () => {
                 <div className="step-bottom-right">
                     <img src={bear} alt="bear"/>
                 </div>
-            </div>       
+            </div>
+            <Contacts/>
+            <Footer/>            
+            </>                  
     )
 }
 

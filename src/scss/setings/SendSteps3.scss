@@ -1,0 +1,28 @@
+form {
+    & select {
+    width: 200px;
+    height: 35px;
+    margin: 15px 0;
+    }
+}
+.step3-paragraph {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+    & input {
+        margin: 15px;
+        height: 35px;
+        width: 500px;
+    }
+}
+.steps-choice-buttons {
+    margin: 10px;
+    padding: 20px 10px;
+    font-size: 24px;
+    font-weight: 300;
+    background-color:transparent;
+    & button {
+        background: white;
+    }
+}
+
